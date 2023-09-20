@@ -8,7 +8,7 @@ type Props = {
 const ComponentWrapper: React.FC<Props> = ({ id, style, children }) => {
   return (
     <section id={id} className={style}>
-      <div className="w-full h-full max-w-[1360px] mx-auto md:px-10 px-4">
+      <div className="w-full h-full max-w-[1330px] mx-auto md:px-10 px-4">
         {children}
       </div>
     </section>

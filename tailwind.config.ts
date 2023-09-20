@@ -19,7 +19,11 @@ const config: Config = {
         },
         white: {
           main: "#fff",
+          off: "#EFEEE8",
         },
+      },
+      fontFamily: {
+        mullish: ["Mulish", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

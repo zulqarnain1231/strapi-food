@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ComponentWrapper from "../Wrappers/ComponentWrapper";
 import Image from "next/image";
@@ -74,7 +75,12 @@ const Navbar = () => {
             <BsChevronCompactDown className="text-2xl text-[#565656]" />
           </div>
         </div>
-        <button className="flex lg:hidden items-center justify-center">
+        <button
+          onClick={() => {
+            console.log("clicked");
+          }}
+          className="flex lg:hidden items-center justify-center"
+        >
           <RiMenu3Fill className="text-white-main text-3xl" />
         </button>
       </nav>

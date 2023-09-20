@@ -5,7 +5,7 @@ import SearchSnippet from "./SearchSnippet";
 
 const Hero = () => {
   return (
-    <ComponentWrapper id="hero" style="w-full min-h-[calc(100dvh-100px)]">
+    <ComponentWrapper id="hero" style="w-full xl:h-[calc(100dvh-100px)]">
       <div className="w-full h-full grid xl:grid-cols-[1.5fr,1fr] gap-6">
         {/* left section */}
         <aside className="w-full h-full flex flex-col items-start justify-center gap-6">

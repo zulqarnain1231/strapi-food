@@ -1,3 +1,4 @@
+import Categories from "@/components/Home/Categories/Categories";
 import Hero from "@/components/Home/Hero/Hero";
 import Navbar from "@/components/Shared/Navigations/Navbar";
 import Image from "next/image";
@@ -19,6 +20,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Categories />
     </main>
   );
 }

@@ -12,7 +12,7 @@ function CustomNextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <button
-      className="absolute -top-24 md:right-[15%] sm:right-[5%]  right-[2%] h-[60px] w-[60px] flex items-center justify-center rounded-full bg-transparent hover:bg-brand-main/20 hover:duration-300 hover:transition-all text-black"
+      className="absolute -top-24 md:right-[15%] sm:right-[5%]  right-[2%] h-[60px] w-[60px] flex items-center justify-center rounded-full bg-transparent hover:bg-brand-main/20 hover:duration-300 hover:transition-all text-black-main  border-[3px] border-solid border-transparent hover:border-r-brand-main hover:border-t-brand-main hover:border-b-brand-main"
       onClick={onClick}
     >
       <FiChevronRight className="text-2xl" />
@@ -24,7 +24,7 @@ function CustomPrevArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <button
-      className="absolute -top-24 md:right-[20%] right-[15%]  h-[60px] w-[60px] flex items-center justify-center rounded-full bg-transparent hover:bg-brand-main/20 hover:duration-300 hover:transition-all text-black"
+      className="absolute -top-24 md:right-[20%] right-[15%]  h-[60px] w-[60px] flex items-center justify-center rounded-full bg-transparent hover:bg-brand-main/20 hover:duration-300 hover:transition-all text-black-main border-[3px] border-solid border-transparent hover:border-l-brand-main hover:border-t-brand-main hover:border-b-brand-main"
       onClick={onClick}
     >
       <FiChevronLeft className="text-2xl" />
@@ -61,7 +61,7 @@ const Categories = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 560,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

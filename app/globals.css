@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 480px) {
+  .slick-slide {
+    margin: 0 10px !important;
+  }
+  .slick-list {
+    margin: 0 -10px !important;
+  }
+}

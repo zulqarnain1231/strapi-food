@@ -71,7 +71,7 @@ const NewResort = () => {
   };
   return (
     <ComponentWrapper id="resorts" style="py-10">
-      <div className="w-full flex flex-col items-center justify-start gap-10">
+      <div className="w-full flex flex-col items-center justify-start gap-10 z-10">
         <SectionTitle title="New Resort This Week" />
         <div className="w-full resorts">
           <Slider {...settings}>

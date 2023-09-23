@@ -18,7 +18,7 @@ const ExploreCard: React.FC<Props> = ({
 }: Props) => {
   return (
     <div
-      className={`w-full h-[200px] flex flex-col items-start justify-between p-[15px] rounded-2xl ${image} bg-center bg-cover bg-no-repeat`}
+      className={`w-full h-[200px] flex flex-col items-start justify-between p-[15px] rounded-2xl ${image} bg-center bg-cover bg-no-repeat shadow-md`}
     >
       <div className="w-full flex items-center justify-end">
         <div className="w-[56px] h-[28px] flex items-center justify-center gap-1 rounded-[20px] bg-white-main/30 cursor-pointer">

@@ -8,7 +8,7 @@ type Props = {
 
 const ResortCard: React.FC<Props> = ({ image }: Props) => {
   return (
-    <div className="w-full flex flex-col items-start justify-start gap-2 relative p-3 border rounded-[25px] shadow-sm">
+    <div className="w-full flex flex-col items-start justify-start gap-2 relative p-3 border rounded-[25px] shadow-sm bg-white-main z-10">
       <div className="w-full h-[226px] relative rounded-[25px]">
         <Image
           className="w-full h-full object-cover rounded-[25px]"

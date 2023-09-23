@@ -25,8 +25,21 @@ export default function Home() {
         </div>
       </div>
       <Categories />
-      <NewResort />
-      <NewResort />
+      <div className="w-full relative">
+        <NewResort />
+        <NewResort />
+        <div className="h-[105px] w-[110px] md:inline-block hidden absolute left-0 top-[40%] pointer-events-none -z-10">
+          <div className="relative w-full h-full">
+            <Image
+              className="w-full h-full object-contain"
+              src={"/Assets/Resorts/Orange.png"}
+              alt=""
+              fill
+            />
+          </div>
+        </div>
+      </div>
+
       <Flash />
       <Explore />
       <Footer />

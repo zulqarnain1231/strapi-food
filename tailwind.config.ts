@@ -24,6 +24,7 @@ const config: Config = {
       },
       fontFamily: {
         mullish: ["Mulish", "sans-serif"],
+        lexend: ["Lexend", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

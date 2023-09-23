@@ -13,10 +13,10 @@
 }
 @media (min-width: 680px) {
   .resorts .slick-slide {
-    padding: 0 16px !important;
+    padding: 0 10px !important;
   }
   .resorts .slick-list {
-    padding: 0 -16px !important;
+    padding: 0 -10px !important;
   }
 }
 

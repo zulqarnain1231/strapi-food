@@ -1,10 +1,8 @@
 import React from "react";
 import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
 import SectionTitle from "@/components/Shared/SectionTitle";
-import * as Icons from "../../../Svg/Icons";
-import { BiLike } from "react-icons/bi";
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import ExploreCard from "./ExploreCard";
+
 const Explore = () => {
   const cities = [
     {

@@ -3,6 +3,7 @@ import Explore from "@/components/Home/Explore/Explore";
 import Flash from "@/components/Home/Flash";
 import Hero from "@/components/Home/Hero/Hero";
 import NewResort from "@/components/Home/Resorts/NewResort";
+import Footer from "@/components/Shared/Navigations/Footer";
 import Navbar from "@/components/Shared/Navigations/Navbar";
 import Image from "next/image";
 
@@ -28,6 +29,7 @@ export default function Home() {
       <NewResort />
       <Flash />
       <Explore />
+      <Footer />
     </main>
   );
 }

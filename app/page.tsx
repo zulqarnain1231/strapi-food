@@ -1,5 +1,6 @@
 import Categories from "@/components/Home/Categories/Categories";
 import Hero from "@/components/Home/Hero/Hero";
+import NewResort from "@/components/Home/Resorts/NewResort";
 import Navbar from "@/components/Shared/Navigations/Navbar";
 import Image from "next/image";
 
@@ -21,6 +22,7 @@ export default function Home() {
         </div>
       </div>
       <Categories />
+      <NewResort />
     </main>
   );
 }

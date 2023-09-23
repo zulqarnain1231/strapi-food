@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CategoryCard from "./CategoryCard";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import SeeAll from "@/components/Shared/Buttons/SeeAll";
+import SectionTitle from "@/components/Shared/SectionTitle";
 
 function CustomNextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -72,16 +74,9 @@ const Categories = () => {
   return (
     <ComponentWrapper id="categories" style="lg:py-20 py-10">
       <div className="w-full flex flex-col items-center justify-start gap-10">
-        <div className="w-full flex md:flex-row flex-col md:items-center items-start md:justify-between justify-start gap-4">
-          <h2 className="text-black-main sm:text-[40px] text-4xl font-normal sm:leading-[50px]">
-            Browse By Categories
-          </h2>
-          <button className="h-[54px] w-[161px] flex items-center justify-center gap-2 text-white-main text-xl font-normal bg-gradient-to-t from-brand-secondary to-brand-main rounded-[60px]">
-            See All
-            <BsArrowUpRight className="text-white-main text-2xl" />
-          </button>
-        </div>
-        <div className="w-full">
+        <SectionTitle title=" Browse By Categories" />
+
+        <div className="w-full categories">
           <Slider {...settings}>
             {[
               "Food",

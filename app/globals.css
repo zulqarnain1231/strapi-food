@@ -4,10 +4,17 @@
 @tailwind utilities;
 
 @media (min-width: 560px) {
-  .slick-slide {
+  .categories .slick-slide {
     margin: 0 10px !important;
   }
-  .slick-list {
+  .categories .slick-list {
     margin: 0 -10px !important;
   }
+}
+
+.categories .slick-list {
+  height: 250px !important;
+}
+.slick-slide {
+  height: 100% !important;
 }

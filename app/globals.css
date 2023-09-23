@@ -11,9 +11,20 @@
     margin: 0 -10px !important;
   }
 }
+@media (min-width: 680px) {
+  .resorts .slick-slide {
+    margin: 0 16px !important;
+  }
+  .resorts .slick-list {
+    margin: 0 -16px !important;
+  }
+}
 
 .categories .slick-list {
   height: 250px !important;
+}
+.resorts .slick-list {
+  height: 400px !important;
 }
 .slick-slide {
   height: 100% !important;

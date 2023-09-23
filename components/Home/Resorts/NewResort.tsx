@@ -1,50 +1,92 @@
+"use client";
 import React from "react";
 import SectionTitle from "@/components/Shared/SectionTitle";
 import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
-import Image from "next/image";
-import { HiOutlineLocationMarker } from "react-icons/hi";
+import ResortCard from "./ResortCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
+function CustomNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className="absolute -top-24 md:right-[15%] sm:right-[5%]  right-[2%] h-[60px] w-[60px] flex items-center justify-center rounded-full bg-transparent hover:bg-brand-main/20 hover:duration-300 hover:transition-all text-black-main  border-[3px] border-solid border-transparent hover:border-r-brand-main hover:border-t-brand-main hover:border-b-brand-main"
+      onClick={onClick}
+    >
+      <FiChevronRight className="text-2xl" />
+    </button>
+  );
+}
+
+function CustomPrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className="absolute -top-24 md:right-[20%] right-[15%]  h-[60px] w-[60px] flex items-center justify-center rounded-full bg-transparent hover:bg-brand-main/20 hover:duration-300 hover:transition-all text-black-main border-[3px] border-solid border-transparent hover:border-l-brand-main hover:border-t-brand-main hover:border-b-brand-main"
+      onClick={onClick}
+    >
+      <FiChevronLeft className="text-2xl" />
+    </button>
+  );
+}
 
 const NewResort = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+    speed: 500,
+    autoplay: true,
+    slidesToShow: 3.5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <ComponentWrapper id="resorts" style="py-10">
       <div className="w-full flex flex-col items-center justify-start gap-10">
         <SectionTitle title="New Resort This Week" />
-        <div className="w-full grid grid-cols-4">
-          <div className="w-full flex flex-col items-start justify-start gap-2 relative p-3 border rounded-[25px]">
-            <div className="w-full h-[226px] relative rounded-[25px]">
-              <Image
-                className="w-full h-full object-cover rounded-[25px]"
-                src={"/Assets/Resorts/Resort1.png"}
-                alt=""
-                fill
-              />
-            </div>
-            <p className="text-black-main text-[22px] font-medium">
-              $99.99/
-              <span className="text-lg text-black-main/70 font-normal">
-                night
-              </span>
-            </p>
-            <p className="text-black-main text-[22px] leading-7 font-medium">
-              Grand Canyon National...
-            </p>
-            <div className="w-full flex items-center justify-start gap-2">
-              <HiOutlineLocationMarker className="text-xl flex-shrink-0  text-black-off" />
-              <p className="text-black-off text-lg font-normal">
-                Gregorychester, USA
-              </p>
-            </div>
-            <div className="absolute h-[53px] w-[40px] top-[10px] right-8 pointer-events-none z-10">
-              <div className="w-full h-full relative">
-                <Image
-                  className="w-full h-full object-contain"
-                  src={"/Assets/Resorts/Badge.png"}
-                  alt=""
-                  fill
-                />
-              </div>
-            </div>
-          </div>
+        <div className="w-full resorts">
+          <Slider {...settings}>
+            {[
+              "/Assets/Resorts/Resort1.png",
+              "/Assets/Resorts/Resort2.png",
+              "/Assets/Resorts/Resort3.png",
+              "/Assets/Resorts/Resort3.png",
+              "/Assets/Resorts/Resort1.png",
+              "/Assets/Resorts/Resort2.png",
+              "/Assets/Resorts/Resort3.png",
+            ].map((item: string, index: number) => (
+              <ResortCard key={index} image={item} />
+            ))}
+          </Slider>
         </div>
       </div>
     </ComponentWrapper>

@@ -1,4 +1,5 @@
 import Categories from "@/components/Home/Categories/Categories";
+import Flash from "@/components/Home/Flash";
 import Hero from "@/components/Home/Hero/Hero";
 import NewResort from "@/components/Home/Resorts/NewResort";
 import Navbar from "@/components/Shared/Navigations/Navbar";
@@ -23,6 +24,8 @@ export default function Home() {
       </div>
       <Categories />
       <NewResort />
+      <NewResort />
+      <Flash />
     </main>
   );
 }

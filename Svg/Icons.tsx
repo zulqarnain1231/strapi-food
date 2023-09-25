@@ -73,3 +73,40 @@ export const Liked: React.FC<Props> = ({ ClassName, fill, stroke }: Props) => {
     </svg>
   );
 };
+export const Badge: React.FC<Props> = ({ ClassName, fill, stroke }: Props) => {
+  return (
+    <svg
+      width="44"
+      height="54"
+      viewBox="0 0 44 54"
+      fill={fill}
+      className={ClassName}
+      stroke={stroke}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M43.0688 0.166077H0.407898V53.2157L20.3684 34.4809C21.1379 33.7586 22.3363 33.7585 23.1058 34.4809L43.0688 53.218V0.166077Z"
+        fill="url(#paint0_linear_14_2036)"
+      />
+      <path
+        d="M23.054 9.35629L24.3881 12.0424C24.5678 12.4139 25.0504 12.7663 25.4572 12.8425L27.87 13.2426C29.4122 13.4997 29.7718 14.6237 28.6648 15.7477L26.7819 17.6432C26.4696 17.9575 26.2899 18.5766 26.394 19.0243L26.9333 21.3675C27.359 23.2154 26.375 23.9393 24.7571 22.9677L22.4957 21.6152C22.0889 21.3675 21.4076 21.3675 21.0008 21.6152L18.7394 22.9677C17.1215 23.9298 16.1374 23.2154 16.5632 21.3675L17.1025 19.0243C17.1877 18.5671 17.0079 17.948 16.6957 17.6336L14.8128 15.7381C13.7058 14.6237 14.0653 13.4997 15.6076 13.233L18.0203 12.833C18.4272 12.7663 18.9097 12.4043 19.0895 12.0329L20.4236 9.34676C21.1522 7.89894 22.3254 7.89894 23.054 9.35629Z"
+        fill="white"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_14_2036"
+          x1="21.1367"
+          y1="0.166077"
+          x2="21.1367"
+          y2="53.2181"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FED307" />
+          <stop offset="1" stop-color="#FF7E19" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};

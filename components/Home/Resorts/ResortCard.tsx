@@ -9,9 +9,9 @@ type Props = {
 const ResortCard: React.FC<Props> = ({ image }: Props) => {
   return (
     <div className="w-full flex flex-col items-start justify-start gap-2 relative p-[10px] border rounded-[22px] bg-white-main z-10">
-      <div className="w-full h-[226px] relative rounded-[25px]">
+      <div className="w-full h-[216px] relative rounded-[20px]">
         <Image
-          className="w-full h-full object-cover rounded-[25px]"
+          className="w-full h-full object-fill rounded-[20px]"
           src={image}
           alt=""
           fill
@@ -30,7 +30,7 @@ const ResortCard: React.FC<Props> = ({ image }: Props) => {
           Gregorychester, USA
         </p>
       </div>
-      <div className="absolute h-[53px] w-[40px] top-[7px] right-8 pointer-events-none z-10">
+      <div className="absolute h-[53px] w-[40px] top-[8px] right-8 pointer-events-none z-10">
         <Icons.Badge stroke="" fill="" ClassName="h-full w-full" />
       </div>
     </div>
